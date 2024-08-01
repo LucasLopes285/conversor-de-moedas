@@ -1,0 +1,123 @@
+/* Limpar as formatações padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #e6e6e6; /* Cor de fundo leve */
+}
+
+/* Estilos para o cabeçalho */
+#cabecalho {
+    background: #f7b600; /* Cor de fundo amarela */
+    padding: 15px;
+    text-align: center;
+}
+
+#logo {
+    padding: 10px;
+    display: inline-block;
+}
+
+#logo h1 {
+    font-size: 2.5em;
+    color: #ffffff; /* Cor branca para o texto da logo */
+    margin: 0;
+}
+
+#logo a {
+    color: #ffffff; /* Cor branca para os links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#logo a:hover {
+    color: #000000; /* Cor preta ao passar o mouse */
+}
+
+/* Estilos principais da página */
+#principal {
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre postagens e lateral */
+}
+
+#lateral {
+    width: 100%;
+    max-width: 400px;
+}
+
+.conteudo-lateral {
+    background: #ffffff; /* Fundo branco para conteúdo lateral */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilo para os formulários */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form select, form button {
+    margin-bottom: 10px;
+}
+
+form input, form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f7b600;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d99800;
+}
+
+/* Estilo para as mensagens */
+#resultMessage {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Rodapé */
+#rodape {
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background: #cccccc; /* Cor de fundo para o rodapé */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lateral {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <div id="logo">
+            <h1>Con<span class="branco">versor</span></h1>
+        </div>
+    </header>
+
+    <main id="principal">
+        <aside id="lateral">
+            <div class="conteudo-lateral">
+                <h3>Conversor de Moedas</h3>
+                <form id="converterForm">
+                    <label for="amount">Valor:</label>
+                    <input type="number" id="amount" name="amount" required>
+
+                    <label for="fromCurrency">De:</label>
+                    <select id="fromCurrency" name="fromCurrency">
+                        <option value="USD">Dólar (USD)</option>
+                        <option value="BRL">Real (BRL)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                    </select>
+
+                    <label for="toCurrency">Para:</label>
+                    <select id="toCurrency" name="toCurrency">
+                        <option value="USD">Dólar (USD)</option>
+                        <option value="BRL">Real (BRL)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                    </select>
+
+                    <button type="submit">Converter</button>
+                </form>
+                <p id="resultMessage"></p>
+            </div>
+        </aside>
+    </main>
+
+    <footer id="rodape">
+        Todos os direitos reservados
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
